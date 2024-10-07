@@ -8,7 +8,10 @@ export default {
     extend: {
       colors: {
         primary: '#053559'
-      }
+      },
+      fontFamily: {
+        'sf-pro': ['SF Pro Display', 'sans-serif'],
+      },
     },
   },
   plugins: [],

@@ -19,7 +19,6 @@ const SearchCampaigns = () => {
     setSubmittedSearch(searchTerm);
   };
 
-  
   const filteredCampaigns = campaigns.filter((campaign) =>
     campaign.campaignTitle.toLowerCase().includes(submittedSearch)
   );

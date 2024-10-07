@@ -1,6 +1,11 @@
 import React, { useState, useContext } from "react";
 import { Select } from "antd";
 import { FormDataContext } from "../utils/FormDataContext";
+import Facebook from "../assets/face";
+import Youtube from "../assets/youtube";
+import Instagram from "../assets/tok";
+import Tok from "../assets/instagram";
+import Twitter from "../assets/twitter";
 
 function Form({ onClose }) {
   const [campaignTitle, setCampaignTitle] = useState("");
@@ -25,7 +30,6 @@ function Form({ onClose }) {
 
     addCampaign(formData); // Add the new campaign to the context
 
-    // Reset form fields
     setCampaignTitle("");
     setBrandName("");
     setCategory("");
@@ -33,7 +37,7 @@ function Form({ onClose }) {
     setBudget("");
     setChannels([]);
 
-    onClose(); // Close the modal after form submission
+    onClose();
   };
 
   const toggleChannel = (channel) => {
@@ -101,10 +105,14 @@ function Form({ onClose }) {
           />
         </div>
 
-        <div>
+        <div className="flex flex-col mt-2">
           <label className="flex items-center">Select Preferred Channels</label>
           <div className="flex gap-4 mt-2">
-            {/* Add your channel icons here */}
+            <Facebook onClick={() => toggleChannel("Facebook")} />
+            <Tok onClick={() => toggleChannel("Tok")} />
+            <Instagram onClick={() => toggleChannel("Instagram")} />
+            <Youtube onClick={() => toggleChannel("Youtube")} />
+            <Twitter onClick={() => toggleChannel("Twitter")} />
           </div>
         </div>
 
@@ -123,7 +131,7 @@ function Form({ onClose }) {
         <div className="flex items-baseline justify-center ">
           <button
             type="submit"
-            className="bg-primary text-white p-2 mt-4 rounded px-12"
+            className="bg-primary text-white py-[12px] mt-4 rounded px-[64px] font-semibold"
           >
             Create New Campaign
           </button>

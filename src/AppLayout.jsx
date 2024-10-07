@@ -66,9 +66,9 @@ const items2 = mainNavItems.map((label, index) => {
 
 const AppLayout = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
-  const [isModalOpen, setModalOpen] = useState(false); // State for modal
-  const { campaigns } = useContext(FormDataContext); // Get campaigns from context
-  const [selectedKey, setSelectedKey] = useState("item1"); // State for selected menu item
+  const [isModalOpen, setModalOpen] = useState(false);
+  const { campaigns } = useContext(FormDataContext);
+  const [selectedKey, setSelectedKey] = useState("item1");
 
   const {
     token: { colorBgContainer },
@@ -108,7 +108,10 @@ const AppLayout = () => {
   }, []);
 
   return (
-    <Layout style={{ minHeight: "100vh", paddingBottom: "30px" }}>
+    <Layout
+      style={{ minHeight: "100vh", paddingBottom: "30px" }}
+      className="font-sf-pro"
+    >
       {/* Hamburger Menu Button / Close Button */}
       <button
         className="absolute top-4 right-4 md:hidden p-4 text-primary z-10"
@@ -140,7 +143,7 @@ const AppLayout = () => {
           justifyContent: "space-between",
         }}
         width={isSidebarOpen ? 300 : 0}
-        className={`fixed md:relative ${
+        className={`fixed md:relative rounded-tr-2xl rounded-br-2xl ${
           isSidebarOpen ? "" : "hidden md:block"
         }`}
       >
@@ -151,7 +154,6 @@ const AppLayout = () => {
           <Notification className="md:hidden" />
         </div>
 
-        {/* Wrapping Top Section and Menu in a Flex Container */}
         <div className="flex-grow">
           {/* Top section */}
           <div className="flex items-center px-6">
@@ -196,7 +198,6 @@ const AppLayout = () => {
           <Mobile />
         </div>
 
-        {/* Bottom Section with Campaign Shortcuts, now moved to the bottom */}
         <div className="p-4 px-8 xl:mt-20 mt-12 md:mb-4 pb-16 md:pb-0 mb-8">
           <p className="mb-2 flex items-center gap-6">
             <span>Campaign Shortcuts</span>

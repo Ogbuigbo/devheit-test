@@ -1,54 +1,75 @@
-.overview-container {
-    position: relative; 
-    background-image: url('https://tinypic.host/images/2024/10/04/image-110.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 3;
-    
-  }
-  
-  .overview-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(5, 53, 89, 0.5); 
-    z-index: 1; 
-    border-radius: 20px;
-  }
-  
-  h1, span,p {
-   
-    z-index: 2; 
-  }
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SF-Pro-Text-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SF-Pro-Display-Semibold.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SF-Pro-Display-Bold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+*{
+  font-family: 'SF Pro Display', sans-serif;
+}
+
+
+
+
+.overview-container {
+  position: relative; 
+  background-image: url('https://tinypic.host/images/2024/10/04/image-110.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 3;   
+}
+
+.overview-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(10, 87, 146, 0.5); 
+  z-index: 1; 
+  border-radius: 20px;
+}
+
+h1, span, p {
+  z-index: 2; 
+}
 
 .modal-backdrop {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #FFFFFF3D; 
-    backdrop-filter: blur(5px); 
-    z-index: 999; 
-    display: none; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #FFFFFF3D; 
+  backdrop-filter: blur(5px); 
+  z-index: 999; 
+  display: none; 
 }
 
 .modal-backdrop.active {
-    display: block; 
+  display: block; 
 }
-
-
-
 
 .custom-select {
   background-color: #E7F5FF;
 }
 
-
-
-
-  
+.custom-select .ant-select-arrow {
+  color: #053559; 
+}
