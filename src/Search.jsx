@@ -78,7 +78,7 @@ const SearchCampaigns = () => {
         </div>
       </div>
 
-      <div className="p-4">
+      <div className="p-4 xl:mb-8">
         {submittedSearch && filteredCampaigns.length > 0 ? (
           <ul className="list-disc pl-6">
             {filteredCampaigns.map((campaign, index) => (

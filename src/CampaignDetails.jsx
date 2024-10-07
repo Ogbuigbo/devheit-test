@@ -22,9 +22,9 @@ const CampaignDetails = ({ data, index }) => {
   const abbreviatedTitle = abbreviateTitle(data.campaignTitle);
 
   const colors = [
-    "#FF5733",
-    "#33FF57",
-    "#3357FF",
+    "#B2007A",
+    "#FF3700",
+    "#FFAA00",
     "#F1C40F",
     "#8E44AD",
     "#E67E22",

@@ -231,7 +231,7 @@ const AppLayout = () => {
           <Search />
 
           {/* Display CampaignDetails if data exists */}
-          <div className="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-2 md:gap-4 xl:mt-[-20px]">
+          <div className="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-2 md:gap-4 xl:mt-[-70px]  md:mt-[-20px] xl:mr-[20px]">
             {campaigns.length > 0 &&
               campaigns.map((data, index) => (
                 <CampaignDetails key={index} data={data} index={index} />
