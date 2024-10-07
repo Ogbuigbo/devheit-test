@@ -26,7 +26,7 @@ const SearchCampaigns = () => {
   return (
     <div className="mt-16 md:mt-2 lg:px-8 px-2 flex flex-col gap-6">
       <div className="w-full flex md:justify-between justify-center mt-[20px] items-center">
-        <h1 className="text-lg font-medium hidden md:flex">
+        <h1 className="text-lg font-medium hidden md:flex text-primary">
           Explore Campaigns
         </h1>
 
@@ -51,13 +51,13 @@ const SearchCampaigns = () => {
       <div className="lg:flex justify-between items-center hidden">
         <div>
           <p>
-            Search results: <span className="font-medium">432 Blog</span> post
+            Search results: <span className="font-medium text-primary">432 Blog</span> post
             campaigns
           </p>
         </div>
 
         <div className="flex items-center gap-4">
-          <p className="w-[100px]">Sort by:</p>
+          <p className="">Sort by:</p>
           <Select
             showSearch
             style={{ width: "150px" }}
@@ -69,7 +69,7 @@ const SearchCampaigns = () => {
               { value: "Games", label: "Games" },
             ]}
             bordered={false}
-            className="custom-select" // Used a custom class for styling
+            className="custom-select " // Used a custom class for styling
           />
           <div className="flex gap-2">
             <Grid />

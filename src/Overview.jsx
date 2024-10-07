@@ -43,7 +43,7 @@ function Overview() {
             Total Income{" "}
             <span className="flex items-center gap-2">
               <Elipse />
-              $350
+              $850
             </span>
           </p>
         </div>
@@ -51,24 +51,24 @@ function Overview() {
 
       <div className="border border-black rounded-2xl w-[340px] p-6 hidden xl:flex xl:flex-col">
         <div className="flex justify-between items-center border-b border-[#BFBFBF]">
-          <h1 className="text-xl">Profile Information</h1>
+          <h1 className="text-xl text-primary">Profile Information</h1>
           <Blue />
         </div>
-        <div className="mt-2 flex items-center justify-between">
+        <div className="mt-4 flex items-center justify-between">
           <div className="flex gap-2 items-center">
             <img
               src="https://tinypic.host/images/2024/10/04/Profile.png"
               alt="logo"
-              className="w-[50px] h-[50px]"
+              className="w-[56px] h-[56px]"
             />
             <div className="">
-              <h1>Olivia Jacobs Jacobs</h1>
-              <div className="flex border p-[2px] bg-blue-300  text-sm w-[180px]">
-                <div className="bg-blue-600 w-[50px] p-[1px]" />
+              <h1 className="mb-4 font-bold text-primary">Olivia Jacobs Jacobs</h1>
+              <div className="flex rounded-lg  bg-blue-300  text-sm w-[190px] mb-[10px]">
+                <div className="bg-blue-600 w-[50px] p-[2px] rounded-tr-lg rounded-br-lg" />
               </div>
             </div>
           </div>
-          <p>15%</p>
+          <p className="mt-6 text-sm font-medium">15%</p>
         </div>
         <p className="mt-10 text-sm text-justify">
           Complete your profile with details showcasing your skills and
