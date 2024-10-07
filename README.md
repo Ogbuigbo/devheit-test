@@ -84,6 +84,7 @@ Micro-Influx Dashboard is an interactive campaign management tool tailored for i
     npx tailwindcss init -p
 
 5. Configure Tailwind to remove unused styles in production. In your tailwind.config.js, add the paths to all of your template  files:
+     ```bash
     /** @type {import('tailwindcss').Config} */
     module.exports = {
     content: [
