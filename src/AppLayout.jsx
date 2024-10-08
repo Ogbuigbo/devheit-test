@@ -200,9 +200,9 @@ const AppLayout = () => {
 
         <div className="p-4 px-8 xl:mt-20 mt-12 md:mb-4 pb-16 md:pb-0 mb-8">
           <p className="mb-2 flex items-center gap-6">
-            <span>Campaign Shortcuts</span>
+            <span className="font-medium ">Campaign Shortcuts</span>
             <button
-              className="bg-[#E7F5FF] rounded-lg py-1 px-2 text-[10px]"
+              className="bg-[#E7F5FF] rounded-[4px] py-1 px-2 text-[10px]"
               onClick={toggleModal}
             >
               View all
@@ -213,7 +213,7 @@ const AppLayout = () => {
               <div className="flex items-center gap-2" key={index}>
                 <img className="w-[50px] h-[50px]" src={item.url} alt="" />
                 <p>{truncateTitle(item.title)}</p>
-                <RightOutlined />
+                <RightOutlined className="" />
               </div>
             ))}
           </div>

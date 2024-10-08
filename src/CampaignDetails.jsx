@@ -57,9 +57,9 @@ const CampaignDetails = ({ data, index }) => {
 
         <div>
           <h1 className="font-bold text-primary">{data.campaignTitle}</h1>
-          <div className="flex gap-2 text-[14px]">
+          <div className="flex items-center gap-2 text-[14px]">
             <p>{data.brandName}</p>
-            <Elipse />
+            <span className="w-1  h-1 bg-[#595959] rounded-full"></span>
             <span>Product Review</span>
           </div>
         </div>

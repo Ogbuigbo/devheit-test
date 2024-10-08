@@ -20,7 +20,7 @@ function Dashboard() {
     <div className="mt-[40px] md:flex justify-between items-center hidden">
       <h1 className="text-primary text-lg">Dashboard</h1>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 xl:pr-10">
         <button
           onClick={showModal}
           className="bg-primary flex items-center gap-2 rounded-lg px-4 py-2 cursor-pointer"
